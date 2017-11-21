@@ -19,6 +19,12 @@ background:F0FFFF url(images/bg.jpg) repeat-x;
   font-family:Verdana, Arial, Helvetica, sans-serif;
   color: #A52A2A;
 }
+
+#topbar
+{
+  height:78px; 
+}
+
 /*Header Menu*/
 #topmenu 
 {

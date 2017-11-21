@@ -1,6 +1,6 @@
 body 
 {
-background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW_Ja_Internet/master/images/bg.jpg) repeat-x; 
+background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW_Ja_Internet/master/images/bg.jpg) repeat-x, repeat-y; 
 }
 
 #wrap 

@@ -14,10 +14,9 @@ background:#F0FFFF url(images/bg.jpg) repeat-x;
 /* Header */
 #header 
 {
-  height:24PX;
-  margin:0px auto 15px auto;
-  font-family:Verdana, Arial, Helvetica, sans-serif;
-  color: #A52A2A;
+  height:242PX;
+  background:url(images/header.png) no-repeat left top;
+  clear: both;
 }
 
 #topbar
@@ -29,7 +28,7 @@ background:#F0FFFF url(images/bg.jpg) repeat-x;
 #topmenu 
 {
   display:block;
-  list-stule:none;
+  list-style:none;
   padding:0px 0px 0px 278px;
   float: right;
   width: 415px;

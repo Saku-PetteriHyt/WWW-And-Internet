@@ -15,7 +15,8 @@ background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW_Ja_
 #header 
 {
   height:242PX;
-  background:url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW_Ja_Internet/master/images/header.jpg) no-repeat left top;
+  background:url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW_Ja_Internet/master/images/header.jpg) 
+    no-repeat left top width="300" height="200";
   clear: both;
 }
 

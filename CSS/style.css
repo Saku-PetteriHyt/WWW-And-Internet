@@ -1,6 +1,6 @@
 body 
 {
-background:#F0FFFF url(images/bg.jpg) repeat-x; 
+background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW_Ja_Internet/master/images/bg.jpg) repeat-x; 
 }
 
 #wrap 
@@ -15,7 +15,7 @@ background:#F0FFFF url(images/bg.jpg) repeat-x;
 #header 
 {
   height:242PX;
-  background:url(images/header.jpg) no-repeat left top;
+  background:url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW_Ja_Internet/master/images/header.jpg) no-repeat left top;
   clear: both;
 }
 

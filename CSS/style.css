@@ -11,6 +11,7 @@ background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW_Ja_
   font-size:12px;
   color: #666666;
 }
+
 /* Header */
 #header 
 {
@@ -34,10 +35,12 @@ background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW_Ja_
   float: right;
   width: 415px;
 }
+
 #topmenu li 
 {
   display:inline;
 }
+
 #topmenu a
 {
   display:block;
@@ -52,6 +55,7 @@ background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW_Ja_
 {
   color:#FFFFFF;
 }
+
 #topmenu a:hover
 {
   color:#FFFFFF;
@@ -63,6 +67,7 @@ background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW_Ja_
 {
   background-color: #FFFFFF;
 }
+
 #mainpage
 {
   width:700px;
@@ -70,12 +75,14 @@ background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW_Ja_
   padding:5px 5px 5px 0px;
   height: auto;
 }
+
 #mainpage p
 {
   line-height:22px;
   margin:10px 0px 22px 0px;
   text-align: justify;
 }
+
 #mainpage blockquote
 {
   background:#efefef;
@@ -84,17 +91,20 @@ background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW_Ja_
   font:Georgia, "Times New Roman", Times, serif;
   font-style:italic;
 }
+
 h1, h2, h3, h4, h5
 {
   color:#B32C0E;
   font-weight:bold;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 #mainpage h1
 {
   font-size:24px;
   color: #F2F7F3;
 }
+
 #mainpage h2
 {
   font-size:18px;
@@ -102,18 +112,22 @@ h1, h2, h3, h4, h5
   padding-bottom: 5px;
   border-bottom: 1px solid #B52E10;
 }
+
 #mainpage h3
 {
   font-size: 20px;
 }
+
 #mainpage h4
 {
   font-size: 18px;
 }
+
 #mainpage h5
 {
   font-size: 16px;
 }
+
 #footer
 {
     display:block;
@@ -128,5 +142,10 @@ h1, h2, h3, h4, h5
 table, th, td
 {
    border:1px solid;
-  border-collapse: collapse;
+  padding: 15px;
+}
+
+th
+{
+  text-align: left; 
 }

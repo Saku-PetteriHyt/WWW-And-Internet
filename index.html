@@ -4,6 +4,29 @@
     <head>
       <title>WWW ja Internet - 2017</title>
       <link href="CSS/style.css" rel="stylesheet" type="text/css">
+      
+           <script>
+       function validateForm()
+       {
+        if (document.forms["myForm"]["name"].value==null || document.forms["myForm"]["name"].value == "")
+        {
+         alert("Name must be filled out");
+          return false;
+        }
+        if (document.forms["myForm"]["phone"].value==null || document.forms["myForm"]["phone"].value == "")
+        {
+         alert("Phone must be filled out");
+          return false;
+        }
+        if (document.forms["myForm"]["email"].value==null || document.forms["myForm"]["email"].value == "")
+        {
+         alert("Email must be filled out");
+          return false;
+        }
+         return true;
+       }
+      </script>
+      
       </head>
   <body>
     <div id="wrap">
@@ -91,7 +114,25 @@
         <input type="radio" name="gender" value="male" checked> Male <br>
         <input type="radio" name="gender" value="female"> Female <br>
         E-mail: <input type="email" name="email"> <br>
+        
+        Salutation: <select name="salutation">
+        <option>Dr</option>
+        <option>Mr</option>
+        <option>Mrs</option>
+        <option>Miss</option>
+        <option>Ms</option>
+        </select>
+        </br><br/>
+      Favorite Sport: <select name="sport">
+        <option>Baseball</option>
+        <option>Basketball</option>
+        <option>Football</option>
+        <option>Hockey</option>
         <input type="submit" value="Submit">
+      </form>
+      <h2> Form Validation Example</h2>
+      
+      <form name="myForm" onsubmit="return validateForm()">
       </ol>
       </div>
        </div>

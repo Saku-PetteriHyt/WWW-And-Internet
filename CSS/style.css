@@ -157,3 +157,11 @@ table#t1
   background-color: #f1f1c1;
   border: 1px;
 }
+
+#map
+{
+  margin: 0;
+  padding: 0;
+ height:500px;
+  width: 33%;
+}

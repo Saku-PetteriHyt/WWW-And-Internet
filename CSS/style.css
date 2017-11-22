@@ -34,6 +34,7 @@ background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW_Ja_
   padding:0px 0px 0px 278px;
   float: right;
   width: 415px;
+  position: fixed;
 }
 
 #topmenu li 

@@ -151,5 +151,23 @@
        <p> Something </p>
      </div>
      </div>
+    
+    <div id="map"></div>
+    
+    <script>
+      function initMap()
+      {
+       var location = {lat: 64.216432, lng: 27.714823};
+        var map = new google.maps.Map(document.getElementById("map"), 
+        {
+          zoom: 4,
+          center: location
+        });
+      }
+      
+    </script>
+     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2E0xr4M-KPPqzdqC-wCHAN3oPyH37l5I &callback=initMap"
+  type="text/javascript"></script>
+    
    </body>
 </html>

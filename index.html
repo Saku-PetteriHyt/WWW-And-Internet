@@ -27,6 +27,45 @@
        }
       </script>
       
+          <script>
+      function initMap()
+      {
+       var location = {lat: 64.216432, lng: 27.714823};
+        var map = new google.maps.Map(document.getElementById("map"), 
+        {
+          zoom: 4,
+          center: location
+        });
+         var marker = new google.maps.Marker({
+        position: location,
+          map: map
+      });
+      }
+    </script>
+      
+           <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2E0xr4M-KPPqzdqC-wCHAN3oPyH37l5I &callback=initMap"
+  type="text/javascript">
+    </script>
+      
+      <script>
+function allowDrop(ev) 
+{
+    ev.preventDefault();
+}
+
+function drag(ev) 
+{
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) 
+{
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+      
       </head>
   <body>
     <div id="wrap">
@@ -151,28 +190,12 @@
        <p> Something </p>
      </div>
      </div>
-    
     <div id="map"></div>
-    
-    <script>
-      function initMap()
-      {
-       var location = {lat: 64.216432, lng: 27.714823};
-        var map = new google.maps.Map(document.getElementById("map"), 
-        {
-          zoom: 4,
-          center: location
-        });
-         var marker = new google.maps.Marker({
-        position: location,
-          map: map
-      });
-      }
-    </script>
-    
-     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2E0xr4M-KPPqzdqC-wCHAN3oPyH37l5I &callback=initMap"
-  type="text/javascript">
-    </script>
+
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<img id="drag1" src="img_logo.gif" draggable="true"
+ondragstart="drag(event)" width="336" height="69">
     
    </body>
 </html>

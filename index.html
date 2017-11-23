@@ -65,6 +65,20 @@ function drop(ev)
 }
 < / script>
 
+<script>
+function draw(x,y)
+{
+	var canvas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");
+	ctx.save();
+	ctx.fillStyle = "rgba(0, 200, 0, 1)";
+	ctx.fillRect (x, 20, 50, 50);
+	ctx.restore();
+	x += 5;
+	var loopTimer = setTimeOut("draw("+x+", "+y+")", 200);
+}
+</script>
+	
 < / head>
 <body>
 <div id = "wrap">
@@ -198,6 +212,9 @@ function drop(ev)
 
 	<img id = "drag1" src = "images/lake.jpg" draggable = "true"
 	ondragstart = "drag(event)" width = "336" height = "69">
+		
+	<button onclick="draw"(0,0)"> Draw </button>
+	<canvas id="canvas" widhth="550" height="400"></canvas>
 
 	< / body>
 	< / html>

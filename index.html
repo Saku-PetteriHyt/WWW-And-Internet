@@ -49,14 +49,14 @@ function drop(ev)
 <script type="application/javascript" language="javascript">
 function draw(x,y)
 {
-	var canvas = document.getElementById("canvas");
-	var ctx = canvas.getContext("2d");
+	var canvas = document.getElementById('canvas');
+	var ctx = canvas.getContext('2d');
 	ctx.save();
 	ctx.fillStyle = "rgba(0, 200, 0, 1)";
 	ctx.fillRect (x, 20, 50, 50);
 	ctx.restore();
 	x += 5;
-	var loopTimer = setTimeOut("draw("+x+", "+y+")", 200);
+	var loopTimer = setTimeOut('draw('+x+', '+y+')', 1000);
 }
 </script>
       

@@ -2,7 +2,7 @@
 <meta http-equiv="content-Type" content="text/html; charset=utf-8" />
   <html>
     <head>
-      <title>WWW ja Internet - 2017</title>
+      <title>WWW ja Internet - 2017 v1</title>
       <link href="CSS/style.css" rel="stylesheet" type="text/css">
       
            <script>
@@ -26,6 +26,39 @@
          return true;
        }
       </script>
+      
+      <script>
+function allowDrop(ev)
+{
+	ev.preventDefault();
+}
+
+function drag(ev)
+{
+	ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev)
+{
+	ev.preventDefault();
+	var data = ev.dataTransfer.getData("text");
+	ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+<script>
+function draw(x,y)
+{
+	var canvas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");
+	ctx.save();
+	ctx.fillStyle = "rgba(0, 200, 0, 1)";
+	ctx.fillRect (x, 20, 50, 50);
+	ctx.restore();
+	x += 5;
+	var loopTimer = setTimeOut("draw("+x+", "+y+")", 200);
+}
+</script>
       
       </head>
   <body>

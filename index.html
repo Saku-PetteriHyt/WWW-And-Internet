@@ -1,201 +1,203 @@
-<! DOCTYPE html>
-<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
-  <html>
-    <head>
-      <title>WWW ja Internet - 2017</title>
-      <link href="CSS/style.css" rel="stylesheet" type="text/css">
-      
-           <script>
-       function validateForm()
-       {
-        if (document.forms["myForm"]["name"].value==null || document.forms["myForm"]["name"].value == "")
-        {
-         alert("Name must be filled out");
-          return false;
-        }
-        if (document.forms["myForm"]["phone"].value==null || document.forms["myForm"]["phone"].value == "")
-        {
-         alert("Phone must be filled out");
-          return false;
-        }
-        if (document.forms["myForm"]["email"].value==null || document.forms["myForm"]["email"].value == "")
-        {
-         alert("Email must be filled out");
-          return false;
-        }
-         return true;
-       }
-      </script>
-      
-          <script>
-      function initMap()
-      {
-       var location = {lat: 64.216432, lng: 27.714823};
-        var map = new google.maps.Map(document.getElementById("map"), 
-        {
-          zoom: 4,
-          center: location
-        });
-         var marker = new google.maps.Marker({
-        position: location,
-          map: map
-      });
-      }
-    </script>
-      
-           <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2E0xr4M-KPPqzdqC-wCHAN3oPyH37l5I &callback=initMap"
-  type="text/javascript">
-    </script>
-      
-      <script>
-function allowDrop(ev) 
+<!DOCTYPE html>
+<meta http - equiv = "content-Type" content = "text/html; charset=utf-8" / >
+<html>
+<head>
+<title>WWW ja Internet - 2017< / title>
+<link href = "CSS/style.css" rel = "stylesheet" type = "text/css">
+
+<script>
+function validateForm()
 {
-    ev.preventDefault();
+	if (document.forms["myForm"]["name"].value == null || document.forms["myForm"]["name"].value == "")
+	{
+		alert("Name must be filled out");
+		return false;
+	}
+	if (document.forms["myForm"]["phone"].value == null || document.forms["myForm"]["phone"].value == "")
+	{
+		alert("Phone must be filled out");
+		return false;
+	}
+	if (document.forms["myForm"]["email"].value == null || document.forms["myForm"]["email"].value == "")
+	{
+		alert("Email must be filled out");
+		return false;
+	}
+	return true;
+}
+< / script>
+
+<script>
+function initMap()
+{
+	var location = { lat: 64.216432, lng : 27.714823 };
+	var map = new google.maps.Map(document.getElementById("map"),
+	{
+	zoom: 4,
+	center : location
+	});
+	var marker = new google.maps.Marker({
+	position: location,
+	map : map
+	});
+}
+< / script>
+
+<script async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyD2E0xr4M-KPPqzdqC-wCHAN3oPyH37l5I &callback=initMap" type = "text/javascript">
+< / script>
+
+<script>
+function allowDrop(ev)
+{
+	ev.preventDefault();
 }
 
-function drag(ev) 
+function drag(ev)
 {
-    ev.dataTransfer.setData("text", ev.target.id);
+	ev.dataTransfer.setData("text", ev.target.id);
 }
 
-function drop(ev) 
+function drop(ev)
 {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
+	ev.preventDefault();
+	var data = ev.dataTransfer.getData("text");
+	ev.target.appendChild(document.getElementById(data));
 }
-</script>
-      
-      </head>
-  <body>
-    <div id="wrap">
-    <div id="topbar">
-      <div id="menus">
-        <ul id="topmenu">
-          <li class="active"><a href="#">Home</a>
-          </li>
-          <li><a href="#table">Table</a></span>
-          </li>
-      <li><a href="#create">HTML5</a>
-          </li>
-      <li><a href="#">Products</a>
-          </li>
-      <li><a href="#contactUs">Contact Us</a>
-      </li>
-      </ul>
-    </div>
-    </div>
-    <div id="header">
-     </div>
-    
-   <div id="content">
-     <div id="mainpage">  
-    
-    <h1> My first web page </h1>
-       <h2> This looks different </h2>
-    <p> This is my first paragraph. Write here stuff </p>
-       <li> What even is this </li>
-    <a href="http://kamk.fi/fi" target="_blank"> KAMK Page </a> <br>
-    <img src="https://www.kamk.fi/loader.aspx?id=068fb45e-6dd1-4c04-b7c9-925242c2c19d" 
-         alt= "Kamk logo"> <br>
-    <img src="images/lake.jpg" alt="header image" width="192" height="108"> <br>
-    
-    <ul>
-      <li> WWW ja Internet</li>
-      <li> Data structures </li>
-      <li> Script </li>
-    <ol>
-      <h2 id="create"> Creating your own html page </h2>
-      <li> Item1 </li>
-      <li> Item2 </li>
-      <li> Item3 </li>
-      <h2 id="Table"> How to make a table in html pages? </h2>
-      
-      <table>
-        <caption> Random Stuff</caption>
-        <tr>
-          <th colspan="2"> Name </th>
-          <th> Age </th>
-        </tr>
-        <tr>
-          <td> Will </td>
-          <td> Smith </td>
-          <td> 50 </td>
-        </tr>       
-        <tr>
-          <td> Erik </td>
-          <td> Eerikson </td>
-          <td> 32 </td>
-        </tr>
-      </table>
-      
-            <table id="t1">
-        <caption> Different Style</caption>
-        <tr>
-          <th> Stuff </th>
-          <th> Things </th>
-        </tr>
-        <tr>
-          <td> Fill </td>
-          <td> Stuffing </td>
-        </tr>       
-        <tr>
-          <td> Placeholder </td>
-          <td> Dummy </td>
-        </tr>
-      </table>
-      
-      <h2 id="contactUs"> Contact Us </h2>
-      <form>
-        First Name: <input type="text" name="fname"> <br> 
-         Last Name: <input type="text" name="lname"> <br> 
-        Gender: <br>
-        <input type="radio" name="gender" value="male" checked> Male <br>
-        <input type="radio" name="gender" value="female"> Female <br>
-        E-mail: <input type="email" name="email"> <br>
-        
-        Salutation: <select name="salutation">
-        <option>Dr</option>
-        <option>Mr</option>
-        <option>Mrs</option>
-        <option>Miss</option>
-        <option>Ms</option>
-        </select>
-        </br><br/>
-      Favorite Sport: <select name="sport">
-        <option>Baseball</option>
-        <option>Basketball</option>
-        <option>Football</option>
-        <option>Hockey</option>
-        <input type="submit" value="Submit">
-      </form>
-      <h2> Form Validation Example</h2>
-      <form name="myForm" onsubmit="return validateForm()">
-        Name: <input type="text" name="name" /><br/>
-        Phone: <input type="text" name="phone" /><br/>
-        Email: <input type="text" name="email" /><br/>
-        <input type="submit" value="Submit">
-      </form>
-     
-      <h2>Integrating video into your webpage</h2>
-      <video width="320" height="240" controls>
-        <source src="movei.mp4" type="video/mp4">
-      </video>
-      <h2> Integrating youtube video into your webpage </h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/V6O-vBVCbg0?rel=0" frameborder="0" allowfullscreen></iframe>
-      </ol>
-      </div>
-       </div>
-     <div id="footer">
-       <p> Something </p>
-     </div>
-     </div>
-    <div id="map"></div>
+< / script>
 
-    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+< / head>
+<body>
+<div id = "wrap">
+<div id = "topbar">
+<div id = "menus">
+<ul id = "topmenu">
+<li class = "active"><a href = "#">Home< / a> < / li>
+<li> <a href = "#table">Table< / a>< / span>  < / li>
+<li> <a href = "#create">HTML5< / a>        < / li>
+<li> <a href = "#">Products< / a>           < / li>
+<li> <a href = "#contactUs">Contact Us    < / a>< / li>
+< / ul>
+< / div>
+< / div>
+<div id = "header">< / div>
+<div id = "content">
+<div id = "mainpage">
 
-<img id="drag1" src="img_logo.gif" draggable="true"
-ondragstart="drag(event)" width="336" height="69">
-    
-   </body>
-</html>
+<h1> My first web page < / h1>
+<h2> This looks different < / h2>
+<p> This is my first paragraph.Write here stuff < / p>
+<li> What even is this < / li>
+
+<a href = "http://kamk.fi/fi" target = "_blank"> KAMK Page < / a> <br>
+<img src = "https://www.kamk.fi/loader.aspx?id=068fb45e-6dd1-4c04-b7c9-925242c2c19d" alt = "Kamk logo"> <br>
+<img src = "images/lake.jpg" alt = "header image" width = "192" height = "108"> <br>
+
+	<ul>
+	<li> WWW ja Internet< / li>
+	<li> Data structures < / li>
+	<li> Script < / li>
+	<ol>
+
+	<h2 id = "create"> Creating your own html page < / h2>
+	<li> Item1 < / li>
+	<li> Item2 < / li>
+	<li> Item3 < / li>
+	<h2 id = "Table"> How to make a table in html pages ? < / h2>
+
+	<table>
+	<caption> Random Stuff< / caption>
+	<tr>
+	<th colspan = "2"> Name < / th>
+	<th> Age < / th>
+	< / tr>
+
+	<tr>
+	<td> Will < / td>
+	<td> Smith < / td>
+	<td> 50 < / td>
+	< / tr>
+
+	<tr>
+	<td> Erik < / td>
+	<td> Eerikson < / td>
+	<td> 32 < / td>
+	< / tr>
+	< / table>
+
+	<table id = "t1">
+	<caption> Different Style< / caption>
+	<tr>
+	<th> Stuff < / th>
+	<th> Things < / th>
+	< / tr>
+
+	<tr>
+	<td> Fill < / td>
+	<td> Stuffing < / td>
+	< / tr>
+
+	<tr>
+	<td> Placeholder < / td>
+	<td> Dummy < / td>
+	< / tr>
+	< / table>
+
+	<h2 id = "contactUs"> Contact Us < / h2>
+	<form>
+	First Name : <input type = "text" name = "fname"> <br>
+	Last Name : <input type = "text" name = "lname"> <br>
+	Gender : <br>
+	<input type = "radio" name = "gender" value = "male" checked> Male <br>
+	<input type = "radio" name = "gender" value = "female"> Female <br>
+	E - mail : <input type = "email" name = "email"> <br>
+
+	Salutation : <select name = "salutation">
+	<option>Dr< / option>
+	<option>Mr< / option>
+	<option>Mrs< / option>
+	<option>Miss< / option>
+	<option>Ms< / option>
+	< / select>
+	< / br><br / >
+
+	Favorite Sport : <select name = "sport">
+	<option>Baseball< / option>
+	<option>Basketball< / option>
+	<option>Football< / option>
+	<option>Hockey< / option>
+	<input type = "submit" value = "Submit">
+	< / form>
+
+	<h2> Form Validation Example< / h2>
+	<form name = "myForm" onsubmit = "return validateForm()">
+	Name: <input type = "text" name = "name" / ><br / >
+	Phone : <input type = "text" name = "phone" / ><br / >
+	Email : <input type = "text" name = "email" / ><br / >
+	<input type = "submit" value = "Submit">
+	< / form>
+
+	<h2>Integrating video into your webpage< / h2>
+	<video width = "320" height = "240" controls>
+	<source src = "movei.mp4" type = "video/mp4">
+	< / video>
+
+	<h2> Integrating youtube video into your webpage < / h2>
+	<iframe width = "560" height = "315" src = "https://www.youtube.com/embed/V6O-vBVCbg0?rel=0" frameborder = "0" allowfullscreen>< / iframe>
+	< / ol>
+	< / div>
+	< / div>
+
+	<div id = "footer">
+	<p> Something < / p>
+	< / div>
+	< / div>
+
+	<div id = "map">< / div>
+
+	<div id = "div1" ondrop = "drop(event)" ondragover = "allowDrop(event)">< / div>
+
+	<img id = "drag1" src = "img_logo.gif" draggable = "true"
+	ondragstart = "drag(event)" width = "336" height = "69">
+
+	< / body>
+	< / html>

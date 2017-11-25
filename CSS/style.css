@@ -192,8 +192,9 @@ table#t1
 
 #div1 
 {
-    width: 350px;
-    height: 70px;
+  float:left;
+    width: 100px;
+    height: 100px;
     padding: 10px;
     border: 1px solid #aaaaaa;
 }

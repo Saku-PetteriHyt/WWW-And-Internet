@@ -46,6 +46,7 @@ background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW-And
 /*Header Menu*/
 #topmenu 
 {
+  color:#000000;
   display:block;
   list-style:none;
   padding:0px 0px 0px 278px;
@@ -78,7 +79,7 @@ background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW-And
 #topmenu a:hover
 {
   color:#FFFFFF;
-  background-color: #B52E10;
+  background-color: #FF0000;
 }
 
 /*Content*/

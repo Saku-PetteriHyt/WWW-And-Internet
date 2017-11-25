@@ -15,7 +15,7 @@ background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW-And
 /* Header */
 #header 
 {
-  
+  margin: auto;
   position: relative;
   no-repeat left top;
   clear: both;

@@ -15,8 +15,18 @@ background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW-And
 /* Header */
 #header 
 {
+  
+  position: relative;
   no-repeat left top;
   clear: both;
+}
+
+#titlevideo
+{
+ position:absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);  
 }
 
 #topbar

@@ -30,9 +30,6 @@ background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW-And
 #topTitle
 {
   float: left;
-  background:url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW-And-Internet/master/Images/Featuredimagerapuranta.png) 
-  no-repeat left top;
-  clear: both;
   position: fixed;
 }
 

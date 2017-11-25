@@ -45,6 +45,24 @@ function drop(ev)
 	var data = ev.dataTransfer.getData("text");
 	ev.target.appendChild(document.getElementById(data));
 }
+
+function showPosition()
+	      {
+		if(navigator.geolocation)
+		{
+		navigator.geolocation.getCurrentPosition(showLocation)	
+		}
+		else
+		{
+		 alert("Your browser does not support geolocation!")	
+		}
+	      }
+	      
+function showLocation(position)
+	      {
+		alert("Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude);      
+	      }
+	      
 </script>
 
 <script type="application/javascript" language="javascript">
@@ -201,6 +219,9 @@ function draw(x,y)
           <br>
 	    <h2> RapuRanta HQ </h2>
 	    <br>
+	    
+	    <p> If you are lost, click below to get your location</p>
+	    <button onclick="showPosition()">Click</button>
 	    
     <div id="map"></div>
     <script>

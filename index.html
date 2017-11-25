@@ -72,7 +72,7 @@ function draw(x,y)
 	var ctx = canvas.getContext('2d');
 	ctx.save();
 	ctx.fillStyle = "rgba(0, 200, 0, 1)";
-	ctx.fillRect (x, 20, 50, 50);
+	ctx.fillRect (x, 0, 50, 50);
 	ctx.restore();
 	x += 5;
 	var loopTimer = setTimeout('draw('+x+', '+y+')', 200);

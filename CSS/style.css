@@ -1,6 +1,6 @@
 body 
 {
-background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW_Ja_Internet/master/images/bg.jpg) repeat-y; 
+background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW-And-Internet/master/Images/bg.png) repeat-x; 
 }
 
 #wrap 
@@ -16,7 +16,7 @@ background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW_Ja_
 #header 
 {
   height:242PX;
-  background:url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW_Ja_Internet/master/images/header.jpg) 
+  background:url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW-And-Internet/master/Images/rapuranta.png) 
     no-repeat left top;
   clear: both;
 }
@@ -24,6 +24,15 @@ background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW_Ja_
 #topbar
 {
   height:78px; 
+}
+
+#topTitle
+{
+  padding:0px 0px 0px 278px;
+  float: left;
+  background:url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW-And-Internet/master/Images/Featuredimagerapuranta.png) 
+  width: 415px;
+  position: fixed;
 }
 
 /*Header Menu*/

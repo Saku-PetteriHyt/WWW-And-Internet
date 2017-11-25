@@ -17,6 +17,7 @@ background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW-And
 {
   margin: auto;
   position: relative;
+  width: 50%;
   no-repeat left top;
   clear: both;
 }
@@ -39,6 +40,7 @@ background:#FFFFFF url(https://raw.githubusercontent.com/Saku-PetteriHyt/WWW-And
 {
   float: left;
   position: fixed;
+    z-index: 1;
 }
 
 /*Header Menu*/

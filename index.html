@@ -23,7 +23,8 @@
          alert("Email must be filled out");
           return false;
         }
-         return true;
+         alert("Out of stock, sorry!");
+          return false;
        }
       </script>
       
@@ -177,14 +178,15 @@ function draw(x,y)
         <option>Ms</option>
         </select>
         </br><br/>
-      Favorite Sport: <select name="sport">
-        <option>Baseball</option>
-        <option>Basketball</option>
-        <option>Football</option>
-        <option>Hockey</option>
+      Subject: <select name="sport">
+        <option>Threat</option>
+        <option>Sue</option>
+        <option>Spam</option>
+        <option>Complaint</option>
         <input type="submit" value="Submit">
       </form>
-      <h2> Form Validation Example</h2>
+	    <br>
+      <h2> Get a free Crab plushie! </h2>
       <form name="myForm" onsubmit="return validateForm()">
         Name: <input type="text" name="name" /><br/>
         Phone: <input type="text" name="phone" /><br/>
@@ -223,7 +225,7 @@ function draw(x,y)
     
 <div id = "div1" ondrop = "drop(event)" ondragover = "allowDrop(event)"></div>
 
-<img id = "drag1" src = "images/lake.jpg" draggable = "true"
+<img id = "drag1" src = "Images/title.png" draggable = "true"
 ondragstart = "drag(event)" width = "336" height = "69"><br>
 		
 <button onclick="draw(0,0)"> Draw </button><br>

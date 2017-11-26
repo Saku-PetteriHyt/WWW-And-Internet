@@ -90,7 +90,7 @@ function draw(x,y)
         <ul id="topmenu">
           <li class="active"><a href="#">Home</a>
           </li>
-          <li><a href="#Features">Features</a></span>
+          <li><a href="#mainpage">Features</a></span>
           </li>
       <li><a href="#Buy">Buy</a>
           </li>
@@ -111,13 +111,13 @@ function draw(x,y)
 	  <div id="wrap">
    <div id="content">
      <div id="mainpage">  
-    <br><br><br>
+    <br><br><br><br>
     <h1> Welcome To The RapuRanta! </h1>
 	     
        <h2> Features </h2>
     <p> Catch fish and avoid crabs in this action-packed game! </p>
-	     <li> Over 0 playble heroes! </li>
-       <li> Uncountable numbers of the same enemies! </li>
+	     <li> Over 0 playable heroes! </li>
+       <li> Uncountable numbers of the same enemy! </li>
 	     <li> Unoriginal soundtrack! </li>
        <li> And not a lot more! </li>
 	    <br>
@@ -125,11 +125,12 @@ function draw(x,y)
     <br><br><br>
     <ul>
     <ol>
-      <h2 id="create"> System requirements </h2>
+      <h2 id="create"> System Requirements </h2>
       <li> CPU: Toaster or better</li>
       <li> RAM: At least 5.9L and a 4x4</li>
       <li> VIDEO CARD: Best performance with IntelHD </li>
-      <h2 id="Table"> Tables of important stuff </h2>
+	    
+      <h2 id="Table"> Tables Of Important Stuff </h2>
       
       <table>
         <caption> Awards</caption>
@@ -204,7 +205,7 @@ function draw(x,y)
         <input type="submit" value="Submit">
       </form>
 	    <br>
-      <h2> Get a free Crab plushie! </h2>
+      <h2> Get A Free Crab Plushie! </h2>
       <form name="myForm" onsubmit="return validateForm()">
         Name: <input type="text" name="name" /><br/>
         Phone: <input type="text" name="phone" /><br/>
@@ -239,15 +240,14 @@ function draw(x,y)
 	    <br><br>
 	    <h2> Here You Can Drag A Crab (Do Not Question It) <h2>
 <div id = "div1" ondrop = "drop(event)" ondragover = "allowDrop(event)"></div>
-
 <img id = "drag1" src = "Images/title.png" draggable = "true"
-ondragstart = "drag(event)" width = "100" height = "100"><br>
+ondragstart = "drag(event)" width = "100" height = "100">
+		    <br><br><br>
 		
 		    <h2> You Can Make Progress Here <h2>
 <button onclick="draw(0,0)"> Make Progress </button><br>
 <canvas id="canvas" width="550" height="50"></canvas>
-</ol>     
-					     
+</ol>          
       </div>
        </div>
 
